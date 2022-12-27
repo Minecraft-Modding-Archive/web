@@ -14,7 +14,7 @@ export default function Home() {
   jsonData.forEach((v: any) => {
     mods.push(
       (
-        <div onClick={(_) => Router.push(v.repoUrl)} key={v.id.toString()} className={styles.modContainer}>
+        <div onClick={(_) => Router.push(v.repoUrl + "/releases/latest")} key={v.id.toString()} className={styles.modContainer}>
           <Image className={styles.modContainerImage} alt="" src={v.iconUrl} width={0} height={0} />
           <div>
             <h1 className={inter.className}>{v.modName}</h1>
