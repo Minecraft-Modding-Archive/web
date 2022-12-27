@@ -29,7 +29,7 @@ export default function Footer() {
           GitHub <span>-&gt;</span>
         </h2>
         <p className={inter.className}>
-          Check out our GitHub page for all of our projects' source code!
+          Check out our GitHub page for all of our projects&apos; source code!
         </p>
       </Link>
 

@@ -27,7 +27,7 @@ export default function Home() {
 
   if (jsonData.length === 0) {
     mods.push(
-      <h1 key="-1" className={inter.className}>There aren't any mods available!</h1>
+      <h1 key="-1" className={inter.className}>There aren&apos;t any mods available!</h1>
     );
   }
 
