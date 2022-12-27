@@ -1,1 +1,10 @@
-[]
+[
+    {
+        "modName": "LlamaInstaKill",
+        "repoUrl": "https://github.com/Minecraft-Modding-Archive/LlamaInstaKill",
+        "iconUrl": "https://i.pinimg.com/originals/b6/e1/1d/b6e11d053e08254e228def1e2151b394.png",
+        "modDesc": "Llama's spit instantly kill you!",
+        "id": 1,
+        "dateCreated": "2022-12-27T18:03:03.551Z"
+    }
+]
