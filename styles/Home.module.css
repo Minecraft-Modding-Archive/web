@@ -95,6 +95,8 @@
 .modContainerImage {
   width: 8rem;
   height: 8rem;
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .modContainer p {
