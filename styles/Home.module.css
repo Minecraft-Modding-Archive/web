@@ -92,7 +92,7 @@
   max-height: fit-content;
 }
 
-.modContainer img {
+.modContainerImage {
   width: 8rem;
   height: 8rem;
 }
@@ -136,7 +136,7 @@
   justify-content: center;
 }
 
-.aboutCard img {
+.aboutCardImage {
   width: 110px;
   height: 110px;
   border-radius: 100%;

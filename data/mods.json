@@ -1,1 +1,10 @@
-[]
+[
+    {
+        "modName": "a",
+        "repoUrl": "https://github.com",
+        "iconUrl": "https://github.com/favicon.ico",
+        "modDesc": "shegoshegihse",
+        "id": 1,
+        "dateCreated": "2022-12-27T14:43:13.209Z"
+    }
+]

@@ -5,6 +5,7 @@ import jsonData from "../data/mods.json";
 import { Inter } from '@next/font/google';
 import { ReactElement } from 'react';
 import Router from 'next/router';
+import Image from 'next/image';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +15,7 @@ export default function Home() {
     mods.push(
       (
         <div onClick={(_) => Router.push(v.repoUrl)} key={v.id.toString()} className={styles.modContainer}>
-          <img src={v.iconUrl} />
+          <Image className={styles.modContainerImage} alt="" src={v.iconUrl} width={0} height={0} />
           <div>
             <h1 className={inter.className}>{v.modName}</h1>
             <p className={inter.className}>{v.modDesc}</p>
