@@ -22,20 +22,18 @@ export const getServerSideProps: GetServerSideProps = async ({ query, req, res }
 }
 
 export default function AddMod(props: any) {
-  if (props.shouldRefresh) {
-    return <Redirect url="/" />
-  }
-
-  const isAdmin = IsAdmin();
   const [error1, setError1] = useState(true);
   const [error2, setError2] = useState(true);
-
   const [modName, setModName] = useState("");
   const [repoUrl, setRepoUrl] = useState("");
   const [iconUrl, setIconUrl] = useState("");
   const [modDesc, setModDesc] = useState("");
 
-  if (!isAdmin) {
+  if (props.shouldRefresh) {
+    return <Redirect url="/" />
+  }
+
+  if (!IsAdmin()) {
     return <Error statusCode={403} withDarkMode={true} />;
   }
 
