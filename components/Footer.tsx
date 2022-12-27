@@ -1,12 +1,13 @@
 import styles from "../styles/Home.module.css";
 import { Inter } from "@next/font/google";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Footer() {
   return (
     <div className={styles.grid}>
-      <a
+      <Link
         href="/about"
         className={styles.card}
         rel="noopener noreferrer"
@@ -17,9 +18,9 @@ export default function Footer() {
         <p className={inter.className}>
           Find out more about us!
         </p>
-      </a>
+      </Link>
 
-      <a
+      <Link
         href="/link/github"
         className={styles.card}
         rel="noopener noreferrer"
@@ -30,9 +31,9 @@ export default function Footer() {
         <p className={inter.className}>
           Check out our GitHub page for all of our projects' source code!
         </p>
-      </a>
+      </Link>
 
-      <a
+      <Link
         href="/link/discord"
         className={styles.card}
         rel="noopener noreferrer"
@@ -43,9 +44,9 @@ export default function Footer() {
         <p className={inter.className}>
           Join our Discord server!
         </p>
-      </a>
+      </Link>
 
-      <a
+      <Link
         href="/support"
         className={styles.card}
         rel="noopener noreferrer"
@@ -56,7 +57,7 @@ export default function Footer() {
         <p className={inter.className}>
           Donate and support our projects!
         </p>
-      </a>
+      </Link>
     </div>
   );
 }

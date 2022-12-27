@@ -2,6 +2,7 @@ import { IsAdmin, IsLoggedIn } from "../lib/utils";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { signIn } from "next-auth/react";
+import Link from "next/link";
 
 export default function Header() {
   const loggedIn = IsLoggedIn();
@@ -10,38 +11,36 @@ export default function Header() {
   return (
     <div className={styles.description}>
       <div className={styles.navbuttons}>
-        <a href="/about">
+        <Link href="/about">
           <p>About Us</p>
-        </a>
-        <a href="/link/github">
+        </Link>
+        <Link href="/link/github">
           <p>Our GitHub</p>
-        </a>
-        <a href="/link/discord">
+        </Link>
+        <Link href="/link/discord">
           <p>Our Discord</p>
-        </a>
-        <a href="/support">
+        </Link>
+        <Link href="/support">
           <p>Support Us</p>
-        </a>
+        </Link>
         {
           isAdmin ?
-          <a href="/addmod">
+          <Link href="/addmod">
             <p style={{ fontWeight: "bold" }}>
               Add Mod
             </p>
-          </a>
+          </Link>
           : !loggedIn ?
-            <a>
-              <button onClick={() => signIn()}>
-                <p style={{ fontWeight: "bold" }}>
-                  Login
-                </p>
-              </button>
-            </a>
+            <button onClick={() => signIn()}>
+              <p style={{ fontWeight: "bold" }}>
+                Login
+              </p>
+            </button>
             : ""
         }
       </div>
       <div>
-        <a href="/">
+        <Link href="/">
           <Image
             src="/logo.png"
             alt="Logo"
@@ -49,7 +48,7 @@ export default function Header() {
             height={100}
             priority
           />
-        </a>
+        </Link>
       </div>
     </div>
   );
